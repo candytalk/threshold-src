@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1024px;
+  width: 1024px;
+  color: #333;
+  * {
+    font-family: "MuseoSans300", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+  }
+}
+
+input, select, textarea {
+  border: none;
+  padding: 4px 3px 4px 0;
+  border-radius: 2px;
+  border-bottom: 1px dotted #aaa;
+  margin: 0 3px 0 3px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+th, tr, td {
+  padding: 3px;
+  vertical-align: top;
+}
+
+.hide {
+  display: none;
+}

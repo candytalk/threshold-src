@@ -1,0 +1,40 @@
+$fifteen-mins-bar-high: 30px;
+$all-day-bar-height: 15px;
+
+.chart {
+  margin: 20px 0;
+  position: relative;
+  .all-day-bar {
+    position: absolute;
+    width: 100%;
+    height: $all-day-bar-height;
+    top: 50%;
+    margin-top: -($all-day-bar-height/2);
+  }
+
+  .hour-axis, .min-axis {
+    font-size: 0;
+  }
+
+  .min-axis {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -($fifteen-mins-bar-high/2);
+  }
+
+  .two-hours {
+    display: inline-block;
+    width: percentage(1/12);
+    font-size: 14px;
+    border-right: 1px solid grey;
+    text-align: right;
+    height: 60px;
+  }
+
+  .fifteen-mins {
+    display: inline-block;
+    width: percentage(1/(12*8));
+    height: $fifteen-mins-bar-high;
+  }
+}

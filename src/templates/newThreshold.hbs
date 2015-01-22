@@ -1,0 +1,42 @@
+<td class="color">
+</td>
+<td class="start-time-td" colspan="2">
+    <select name="start-time" class="start-time-selection">
+      {{#each startTimeOptions}}
+          <option value="{{this}}">{{this}}</option>
+      {{/each}}
+    </select>
+</td>
+<td class="end-time-td" style="display: none">
+    <select name="end-time" class="end-time-selection">
+      {{#each endTimeOptions}}
+          <option value="{{this}}">{{this}}</option>
+      {{/each}}
+    </select>
+</td>
+<td class="operation-td"><span class="normal-weight">when the</span><span class="bold-weight"> ErrorSystem</span>
+    <select name="operator">
+        <option value="=">is equal to (=)</option>
+        <option value=">">is greater than (>)</option>
+        <option value="<">is less than (<)</option>
+    </select>
+</td>
+<td class="threshold-value-td">
+    <div class="warning-wrapper">
+        <input type="text" class="thresholdValue" name="warning">
+        <span class="severity warning">trigger a warning <i class="icon-attention"></i></span>
+    </div>
+    <div class="error-wrapper">
+        <input type="text" class="thresholdValue" name="error">
+        <span class="severity error">trigger an error <i class="icon-attention"></i></span>
+    </div>
+    <div class="critical-wrapper">
+        <input type="text" class="thresholdValue" name="critical">
+        <span class="severity critical">trigger a critical <i class="icon-fire"></i></span>
+    </div>
+</td>
+<td class="threshold-remove-td">
+    <div class="remove">
+        <i class="icon-trash"></i>
+    </div>
+</td>

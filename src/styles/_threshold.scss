@@ -1,0 +1,110 @@
+#threshold-table {
+  width: 100%;
+  text-align: left;
+  col.border-right {
+    border-right: 1px dotted #d8d8d8;
+  }
+
+  th.time-from, th.time-until, th.comparison, th.alerts {
+    border-right: 1px dotted $border-grey;
+  }
+
+  th.color {
+    width: 1%;
+  }
+
+  th.time-from {
+    width: 10%;
+  }
+  th.time-until {
+    width: 10%;
+  }
+  th.comparison {
+    width: 35%;
+  }
+  th.alerts {
+    width: 35%;
+  }
+  th.remove {
+    width: 5%;
+  }
+
+  #add-new-threshold {
+    background: #daeff5;
+    font-style: italic;
+    color: $border-grey;
+    border: 1px solid $border-grey;
+    padding: 5px;
+  }
+
+  .start-time-td, .end-time-td {
+    text-align: left;
+  }
+
+  .start-time-selection, .end-time-selection {
+    width: 90%;
+  }
+
+  .operation-td {
+    .normal-weight, .bold-weight {
+      color: #777777;
+    }
+    .bold-weight {
+      font-family: "MuseoSans500";
+    }
+  }
+
+  .threshold-value-td {
+    input {
+      display: inline-block;
+      width: 30%;
+    }
+    span {
+      border-radius: 3px;
+      padding: 1px 3px;
+      display: inline-block;
+      width: 40%;
+      i {
+        float: right;
+        color: white;
+      }
+      &.warning {
+        background: $warning;
+        color: #333;
+      }
+      &.error {
+        background: $error;
+        color: white;
+      }
+      &.critical {
+        background: $critical;
+        color: white;
+      }
+    }
+  }
+
+  .threshold-remove-td {
+    background: white;
+    .remove {
+      background: $grey;
+      width: 27px;
+      height: 25px;
+      border-bottom: 3px solid black;
+      border-radius: 3px;
+      padding: 3px;
+      cursor: pointer;
+    }
+  }
+
+  .threshold:nth-child(odd) {
+    background: white;
+  }
+  .threshold {
+    background: $grey;
+    &.editing {
+      background: $blue;
+      border-top: 3px solid $dark-blue;
+      border-bottom: 3px solid $dark-blue;
+    }
+  }
+}

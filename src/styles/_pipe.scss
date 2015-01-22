@@ -1,0 +1,13 @@
+.pipe {
+  text-align: center;
+  .import-wrapper, .export-wrapper {
+    display: inline-block;
+    width: 45%;
+    textarea {
+      width: 80%;
+      height: 200px;
+      resize: none;
+      border: 1px dotted $black;
+    }
+  }
+}
